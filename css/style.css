@@ -785,6 +785,7 @@ section.footer-down div.last span{
 /* media query starts here */
 
 @media only screen and (max-width:768px){
+   
     div.navbar i{
         display: contents;
         font-size: 2em;
@@ -976,7 +977,7 @@ section.footer-down div.last span{
     }
     
     section.experience div.box-1 div.exp{
-        max-width: 19em;
+        min-width: 19em;
         height: 30vh;
     }
     
@@ -986,14 +987,14 @@ section.footer-down div.last span{
     }
 
     section.experience div.box-2 div.work div.loading-2{
-        margin-top: 2.2em;
+        margin-top: 1.5em;
     }
     
     section.experience div.box-1 div.exp h4,
     section.experience div.box-1 div.exp span,
     section.experience div.box-1 div.exp p{
         margin-left: 1em;
-        margin-top: 1em;
+        margin-top: 0.8em;
     }
     section.experience div.box-1 div.exp span,
     section.experience div.box-2 div.work span{
