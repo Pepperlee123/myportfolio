@@ -445,6 +445,12 @@ div.ser-container p{
     font-size: 27px;
 }
 
+.front p, .front-2 p{
+    display: none;
+    color: white;
+    font-size: 18px;
+}
+
 section.services div.article{
     text-align: center;
     position: absolute;
@@ -927,6 +933,12 @@ section.footer-down div.last span{
 
     section.services div.article hr{
         width: 20%;
+    }
+
+    .front p, .front-2 p{
+        display: contents;
+        color: white;
+        font-size: 18px;
     }
     
 
