@@ -713,10 +713,13 @@ section.footer-up .cta-4{
     padding: 10px 10px;
     border: none;
     background-color: red;
+    color: white;
+    font-size: 14px;
     cursor: pointer;
 }
 
 /* first part ends here */
+
 /* second part starts here */
 section.footer-down{
     background: linear-gradient(120deg, rgb(52, 40, 40) 10%, rgb(39, 39, 48) 70% );
@@ -724,6 +727,7 @@ section.footer-down{
     display: flex;
     flex-direction: column;
     gap: 10em;
+    width: 100%;
 }
 section.footer-down div.icons ul li{
     list-style: none;
@@ -804,7 +808,7 @@ section.footer-down div.last span{
         background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);;
         height: 130vh;
         display: flex;
-        width: 100%;
+        width: 110%;
         
     }
     section.hero-section{
@@ -844,9 +848,17 @@ section.footer-down div.last span{
         flex-direction: column;
     }
 
+    section.about-me div.heading h2{
+        text-align: center;
+        width: 110%;
+        margin: auto;
+    }
     section.about-me div.heading p{
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 1.5em; 
+        width: 110%;
+        margin: auto;
+        text-align: center;
     }
     
     section.about-me div.heading hr{
@@ -854,7 +866,7 @@ section.footer-down div.last span{
     }
     
     section.about-me div.about{
-        min-width: 80%;
+        min-width: 110%;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -874,9 +886,10 @@ section.footer-down div.last span{
     }
     
     section.about-me div.about div.about-article h1{
-        width: 100%;
-        margin-top: 15px;
+        width: 110%;
+        margin: 15px auto 0;
         font-size: 1.2em;
+
     }
     
     section.about-me div.about div.about-article hr{
@@ -890,6 +903,7 @@ section.footer-down div.last span{
         width: 100%;
         font-size: 1.2em;
         text-align: justify;
+        margin: 10px auto 0;
     }
     
     section.about-me div.about .cta-3{
@@ -898,7 +912,7 @@ section.footer-down div.last span{
     }
 
     section.services{
-        width: 100%;
+        width: 110%;
         margin-top: 3em;
         background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);
         height: 130vh;
@@ -948,7 +962,7 @@ section.footer-down div.last span{
     
 
     section.experience{
-        width: 100%;
+        width: 110%;
         margin-left: 0%;
         margin-top: 5em;
         background: linear-gradient(45deg, rgba(72, 72, 204, 0.579) 20%, rgba(197, 153, 153, 0.638)70%);
@@ -965,6 +979,9 @@ section.footer-down div.last span{
         flex-direction: column;
         gap: 1.5em;
         margin-top: 1.5em;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
         margin-right: 0em;
     }
     
@@ -974,15 +991,18 @@ section.footer-down div.last span{
         gap: 1.5em;
         margin-top: 1.5em;
         margin-right: 0em;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
     }
     
     section.experience div.box-1 div.exp{
-        min-width: 19em;
+        max-width: 100%;
         height: 30vh;
     }
     
     section.experience div.box-2 div.work{
-        max-width: 19em;
+        max-width: 100%;
         height: 30vh;
     }
 
@@ -1029,6 +1049,7 @@ section.portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 110%;
 }
 
 section.portfolio h2{
@@ -1062,7 +1083,7 @@ section.portfolio div.img{
 }
 
 section.footer-up{
-    width: 100%;
+    width: 110%;
     background: linear-gradient(270deg, rgba(72, 72, 204, 0.579) 20%, rgba(197, 153, 153, 0.638)70%);
     margin-top: 8em;
     text-align: center;
@@ -1074,7 +1095,7 @@ section.footer-up h1{
     padding: 0.8em 0 0.2em;
 }
 section.footer-up p{
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 0.3em;
 }
 
@@ -1096,8 +1117,8 @@ section.footer-up .cta-4{
     padding: 10px 4px;
     cursor: pointer;
     margin-bottom: 10px;
+    color: white;
 }
-
 
 section.footer-down{
     background: linear-gradient(120deg, rgb(52, 40, 40) 10%, rgb(39, 39, 48) 70% );
@@ -1105,7 +1126,9 @@ section.footer-down{
     display: flex;
     flex-direction: column;
     gap: 10em;
+    width: 110%;
 }
+
 section.footer-down div.icons ul li{
     list-style: none;
     display: inline;
@@ -1114,7 +1137,7 @@ section.footer-down div.icons ul li{
 section.footer-down div.contact{
     display: flex;
     flex-direction: column-reverse;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
     padding-top: 2em;
 }
@@ -1142,7 +1165,7 @@ section.footer-down div.mail a{
     font-size: 15px;
 }
 section.footer-down div.plate{
-    width: 10em;
+    width: 8em;
     display: flex;
     position: relative;
     left: 30%;
