@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body, html{
     font-family: Roboto;
     overflow-x: hidden;
 }
@@ -155,7 +155,7 @@ main{
     margin-top: 5em;
 }
 section.about-me{
-    min-width: 80%;
+    width: 80%;
     margin: auto;
 }
 
@@ -852,10 +852,10 @@ section.hero-section div.hero-text{
 }
 
 section.hero-section div.hero-img{
-    min-width: 70vw;
+    min-width: 68vw;
     height: 80vh;
     margin-top: 1.5em;
-    margin-left: 2px;
+    /* margin-left: 1px; */
     /* border: 2px solid blue; */
 }
 
@@ -866,7 +866,7 @@ section.hero-section div.hero-img img{
     border-top-right-radius: 5em;
     border-bottom-left-radius: 8em;
     border-bottom-right-radius: 0px;
-    margin-left: -1em;
+    margin-right: -1em;
 }
 
 main{
@@ -874,7 +874,7 @@ main{
 }
 
 section.about-me{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
