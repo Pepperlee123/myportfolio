@@ -6,6 +6,7 @@
 }
 body{
     font-family: Roboto;
+    overflow-x: hidden;
 }
 
 /* header styling starts here */
@@ -78,12 +79,11 @@ nav > div.navbar div.btn .cta-1:hover{
 
 div.hero{
     background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);
-    height: 68vh;
+    height: 75vh;
     display: flex;
-    
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 110%;
 }
 section.hero-section{
     display: flex;
@@ -93,23 +93,26 @@ section.hero-section{
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
 }
 section.hero-section div.hero-text{
     min-width: 50%;
+    margin-left: -2.5em;
     /* border: 2px solid black; */
 }
 
 section.hero-section div.hero-img{
-    min-width: 40%;
-    height: 50vh;
-    border: 2px solid blue;
-    margin-left: 1em;
+    min-width: 40vw;
+    height: 66.3vh;
+    margin-left: -3em;
+    /* border: 2px solid blue; */
 }
 section.hero-section div.hero-img img{
-    width: 100%;
+    min-width: 75%;
     height: 100%;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
     /* margin-left: -2em; */
 }
 
@@ -152,7 +155,7 @@ main{
     margin-top: 5em;
 }
 section.about-me{
-    width: 80%;
+    min-width: 80%;
     margin: auto;
 }
 
@@ -177,9 +180,8 @@ section.about-me div.heading p{
 section.about-me div.heading hr{
     width: 10%;
     color: red;
-    height: 3px;
-    background-color: red;
-    border: none;
+    border: 2px solid red;
+    margin: auto;
 }
 
 section.about-me div.about{
@@ -201,11 +203,12 @@ section.about-me div.about div.about-image{
     display: flex;
     align-items: center;
     /* border: 1px solid blue; */
+    /* margin-left: 2em; */
 }
 
 section.about-me div.about div.about-image img{
-    width: 14em;
-    height: 18em;
+    width: 12.5em;
+    height: 17em;
     border-radius: 10px;
     position: relative;
     top: 1em;
@@ -214,7 +217,7 @@ section.about-me div.about div.about-image img{
 }
 section.about-me div.about div.about-image .image{
     background-color: red;
-    height: 20em;
+    height: 19em;
     border-radius: 10px;
     margin-left: 10px;
 }
@@ -477,7 +480,7 @@ section.services div.article hr{
 
 /* experience section starts here */
 section.experience{
-    width: 90%;
+    width: 100%;
     margin-left: 10%;
     margin-top: 5em;
     background: linear-gradient(45deg, rgba(72, 72, 204, 0.579)20%, rgba(197, 153, 153, 0.638)70%);
@@ -491,16 +494,16 @@ section.experience{
 
 section.experience .box-1{
     display: flex;
-    gap: 1.5em;
+    gap: 1.3em;
     margin-top: 1.5em;
-    margin-right: -3em;
+    margin-right: 0.5em;
 }
 
 section.experience .box-2{
     display: flex;
-    gap: 1.5em;
+    gap: 1em;
     margin-top: 1.2em;
-    margin-right: -2em;
+    margin-right: 1.2em;
 }
 
 section.experience div.box-1 div.exp{
@@ -623,10 +626,12 @@ section.experience div.box-2 div.loading-2 div.color-2 span{
 /* portfolio section starts here */
 
 section.portfolio{
-    margin-top: 3em;
+    margin: 3em auto 0em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    
 }
 
 section.portfolio h2{
@@ -650,7 +655,7 @@ section.portfolio div.images{
     display: flex;
     gap: 0.8em;
     width: 100%;
-    margin: 2em 0;
+    margin: 2em auto;
     align-items: center;
     justify-content: center;
 }
@@ -659,6 +664,7 @@ section.portfolio div.img{
     width: 30%;
     height: 25vh;
     border-radius: 20px;
+    margin: auto;
 }
 
 section.portfolio div.img img{
@@ -676,7 +682,7 @@ section.portfolio div.img img{
 /* first part starts here */
 
 section.footer-up{
-    width: 100%;
+    min-width: 100%;
     background: linear-gradient(50deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);;
     margin-top: 8em;
     text-align: center;
@@ -727,7 +733,7 @@ section.footer-down{
     display: flex;
     flex-direction: column;
     gap: 10em;
-    width: 100%;
+    width: 110%;
 }
 section.footer-down div.icons ul li{
     list-style: none;
@@ -744,14 +750,15 @@ section.footer-down div.contact{
 section.footer-down div.icons a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     padding-right: 15px;
 }
 
 section.footer-down div.mail a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
+    margin-right: 2em;
 }
 section.footer-down div.plate{
     width: 10em;
@@ -789,267 +796,301 @@ section.footer-down div.last span{
 /* media query starts here */
 
 @media only screen and (max-width:768px){
-   
-    div.navbar i{
-        display: contents;
-        font-size: 2em;
-    }
-    
-    nav > div.navbar ul li{
-        display: none;
-        margin-right: 1em;
-    }
-    
-    nav > div.navbar .cta-1{
-        display: none;
-    }
 
-    div.hero{
-        background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);;
-        height: 130vh;
-        display: flex;
-        width: 110%;
-        
-    }
-    section.hero-section{
-        display: flex;
-        flex-direction: column-reverse;
-        position: relative;
-        top: -3em; 
-        width: 80%;
-        height: 150vh;
-        margin: auto;
-    }
-    section.hero-section div.hero-text{
-        min-width: 50%;
-        margin-left: 1em;
-        margin-top: -8em;
-    }
-    
-    section.hero-section div.hero-img{
-        min-width: 80%;
-        height: 48vh;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        /* border: 2px solid blue; */
-        /* margin-left: 1em; */
-    }
-    
-    main{
-        margin-top: 0.5em;
-    }
-  
-    section.about-me div.heading{
-        text-align: center;
-        line-height: 3em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+body{
+    overflow-x: hidden;
+}
 
-    section.about-me div.heading h2{
-        text-align: center;
-        width: 110%;
-        margin: auto;
-    }
-    section.about-me div.heading p{
-        font-size: 1.2em;
-        line-height: 1.5em; 
-        width: 110%;
-        margin: auto;
-        text-align: center;
-    }
-    
-    section.about-me div.heading hr{
-        width: 25%;
-    }
-    
-    section.about-me div.about{
-        min-width: 110%;
-        display: flex;
-        flex-direction: column-reverse;
-    }
+nav{
+    position: fixed;
+    background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);
+    height: 4em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+}
 
-    section.about-me div.about div.about-image{
-        /* min-width: 50%; */
-        display: flex;
-        flex-direction: column;
-    }
-    
-    section.about-me div.about div.about-image .image{
-        background-color: red;
-        height: 20em;
-        border-radius: 10px;
-        margin-left: 10px;
-        margin-top: 2em;
-    }
-    
-    section.about-me div.about div.about-article h1{
-        width: 110%;
-        margin: 15px auto 0;
-        font-size: 1.2em;
+div.navbar i{
+    display: contents;
+    font-size: 2em;
+}
 
-    }
-    
-    section.about-me div.about div.about-article hr{
-        width: 15%;
-        margin-top: 0.7em;
-        color: red;
-        border: 2px solid red;
-    }
-    
-    section.about-me div.about div.about-article p{
-        width: 100%;
-        font-size: 1.2em;
-        text-align: justify;
-        margin: 10px auto 0;
-    }
-    
-    section.about-me div.about .cta-3{
-        margin-bottom: 2em;
-        
-    }
+nav > div.navbar ul li{
+    display: none;
+    margin-right: 1em;
+}
 
-    section.services{
-        width: 110%;
-        margin-top: 3em;
-        background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);
-        height: 130vh;
-        border-top-right-radius: 0em;
-        border-bottom-right-radius:  0px;
-        /* position: relative; */
-    }
+nav > div.navbar .cta-1{
+    display: none;
+}
 
-    div.services{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    div.ser-container{
-        display: flex;
-        flex-direction: column;
-        flex-direction: column;
-    }
-    
+div.hero{
+    background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);;
+    height: 150vh;
+    display: flex;
+    min-width: 100%;                
+}
 
-    .center{
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 300px;
-        width: 250px;
-        /* perspective: 1000px; */
-        transform-style: preserve-3d;
-    }
-    
-    .center-1{
-        top: 75%;
-        left: 50%;
-        height: 300px;
-        width: 250px;
-    }
+section.hero-section{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* position: absolute;
+    top: -4em;  */
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    /* border: 2px solid blue; */
+}
 
-    section.services div.article hr{
-        width: 20%;
-    }
+section.hero-section div.hero-text{
+    min-width: 50%;
+    /* margin-left: 1em; */
+    margin: -8em auto 5px;
+}
 
-    .front p, .front-2 p{
-        display: contents;
-        color: white;
-        font-size: 18px;
-    }
-    
+section.hero-section div.hero-img{
+    min-width: 70vw;
+    height: 80vh;
+    margin-top: 1.5em;
+    margin-left: 2px;
+    /* border: 2px solid blue; */
+}
 
-    section.experience{
-        width: 110%;
-        margin-left: 0%;
-        margin-top: 5em;
-        background: linear-gradient(45deg, rgba(72, 72, 204, 0.579) 20%, rgba(197, 153, 153, 0.638)70%);
-        border-top-left-radius: 0em;
-        height: 190vh;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-    }
-    
-    section.experience .box-1{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-        margin-top: 1.5em;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0em;
-    }
-    
-    section.experience .box-2{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-        margin-top: 1.5em;
-        margin-right: 0em;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    section.experience div.box-1 div.exp{
-        max-width: 100%;
-        height: 30vh;
-    }
-    
-    section.experience div.box-2 div.work{
-        max-width: 100%;
-        height: 30vh;
-    }
+section.hero-section div.hero-img img{
+    min-width: 100%;
+    height: 85%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 8em;
+    border-bottom-right-radius: 0px;
+    margin-left: -1em;
+}
 
-    section.experience div.box-2 div.work div.loading-2{
-        margin-top: 1.5em;
-    }
+main{
+    margin-top: 0.5em;
+}
+
+section.about-me{
+    width: 90%;
+    margin: auto;
+}
+
+section.about-me div.heading{
+    text-align: center;
+    line-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.about-me div.heading h2{
+    text-align: center;
+}
+
+section.about-me div.heading p{
+    font-size: 1.2em;
+    line-height: 1.5em; 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+section.about-me div.heading hr{
+    width: 25%;
+}
+
+section.about-me div.about{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section.about-me div.about div.about-image{
+    /* min-width: 50%; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2px;
+
+}
+
+section.about-me div.about div.about-image .image{
+    background-color: red;
+    height: 19em;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 2em;
+}
+
+section.about-me div.about div.about-article h1{
+    width: 100%;
+    margin: 15px auto 0;
+    font-size: 1.2em;
+
+}
+
+section.about-me div.about div.about-article hr{
+    width: 15%;
+    margin-top: 0.7em;
+    color: red;
+    border: 2px solid red;
+}
+
+section.about-me div.about div.about-article p{
+    width: 100%;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 10px auto 0;
+}
+
+section.about-me div.about .cta-3{
+    margin-bottom: 2em;
     
-    section.experience div.box-1 div.exp h4,
-    section.experience div.box-1 div.exp span,
-    section.experience div.box-1 div.exp p{
-        margin-left: 1em;
-        margin-top: 0.8em;
-    }
-    section.experience div.box-1 div.exp span,
-    section.experience div.box-2 div.work span{
-        display: block;
-        color: red;
-        font-size: 18px;
-    }
-    section.experience div.box-1 div.exp h4,
-    section.experience div.box-2 div.work h4{
-        font-size: 20px;
-    }
-    section.experience div.box-2 div.work h4, 
-    section.experience div.box-2 div.work span, 
-    section.experience div.box-2 div.work p{
-        margin-left: 0.7em;
-        margin-top: 1em;
-    }
-    
-    section.experience hr{
-        width: 25%;
-    }
-    section.experience #work{
-        font-size: 20px;
-    }
-    section.experience h1{
-        margin-top: 10px;
-        font-size: 1.5em;
-    }
+}
+
+main section.services{
+    min-width: 100%;
+    margin-top: 3em;
+    background: linear-gradient(45deg, rgba(197, 153, 153, 0.638) 20%, rgba(72, 72, 204, 0.579)70%);
+    height: 130vh;
+    border-top-right-radius: 0em;
+    border-bottom-right-radius:  0px;
+    /* position: relative; */
+}
+
+div.services{
+    display: flex;
+    flex-direction: column;
+}
+
+div.ser-container{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+}
+
+
+.center{
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 250px;
+    /* perspective: 1000px; */
+    transform-style: preserve-3d;
+}
+
+.center-1{
+    top: 75%;
+    left: 50%;
+    height: 300px;
+    width: 250px;
+}
+
+section.services div.article hr{
+    width: 20%;
+}
+
+.front p, .front-2 p{
+    display: contents;
+    color: white;
+    font-size: 18px;
+}
+
+
+section.experience{
+    min-width: 100%;
+    margin-left: 0%;
+    margin-top: 5em;
+    background: linear-gradient(45deg, rgba(72, 72, 204, 0.579) 20%, rgba(197, 153, 153, 0.638)70%);
+    border-top-left-radius: 0em;
+    height: 190vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+section.experience .box-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 1.5em;
+    max-width: 80vw;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0em;
+}
+
+section.experience .box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 1.5em;
+    max-width: 80vw;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0em;
+}
+
+section.experience div.box-1 div.exp{
+    min-width: 85vw;
+    height: 30vh;
+}
+
+section.experience div.box-2 div.work{
+    min-width: 85vw;
+    height: 30vh;
+}
+
+section.experience div.box-2 div.work div.loading-2{
+    margin-top: 1.5em;
+}
+
+section.experience div.box-1 div.exp h4,
+section.experience div.box-1 div.exp span,
+section.experience div.box-1 div.exp p{
+    margin-left: 1em;
+    margin-top: 0.8em;
+}
+section.experience div.box-1 div.exp span,
+section.experience div.box-2 div.work span{
+    display: block;
+    color: red;
+    font-size: 18px;
+}
+section.experience div.box-1 div.exp h4,
+section.experience div.box-2 div.work h4{
+    font-size: 20px;
+}
+section.experience div.box-2 div.work h4, 
+section.experience div.box-2 div.work span, 
+section.experience div.box-2 div.work p{
+    margin-left: 0.7em;
+    margin-top: 1em;
+}
+
+section.experience hr{
+    width: 25%;
+}
+section.experience #work{
+    font-size: 20px;
+}
+section.experience h1{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
 
 section.portfolio{
     margin-top: 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 110%;
+    width: 100%;
 }
 
 section.portfolio h2{
@@ -1083,10 +1124,13 @@ section.portfolio div.img{
 }
 
 section.footer-up{
-    width: 110%;
+    min-width: 100%;
     background: linear-gradient(270deg, rgba(72, 72, 204, 0.579) 20%, rgba(197, 153, 153, 0.638)70%);
     margin-top: 8em;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 40vh;
 }
 
@@ -1102,14 +1146,14 @@ section.footer-up p{
 section.footer-up hr{
     border: 2px solid red;
     width: 16%;
-    margin: 0 auto 4em;
+    margin: 0 auto 3em;
 }
 
 section.footer-up input[type="email"]{
     width: 22em;
     padding: 10px 10px;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 section.footer-up .cta-4{
@@ -1126,7 +1170,7 @@ section.footer-down{
     display: flex;
     flex-direction: column;
     gap: 10em;
-    width: 110%;
+    width: 100%;
 }
 
 section.footer-down div.icons ul li{
